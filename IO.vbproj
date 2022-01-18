@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{492D025E-A134-43B8-AE38-3A3F5E7BCAC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>IO.My.MyApplication</StartupObject>
+    <RootNamespace>IO</RootNamespace>
+    <AssemblyName>IO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>C:\Users\ASUS\Desktop\Application Files\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\start.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7D1B5CD5DFCF020FD210BFFC37798321E4D33C72</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>IO_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <WarningLevel>1</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Core">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="AcroPDFLib" />
+    <Import Include="AxAcroPDFLib" />
+    <Import Include="AxAXVLC" />
+    <Import Include="AXVLC" />
+    <Import Include="IO" />
+    <Import Include="IO.My" />
+    <Import Include="IO.My.Resources" />
+    <Import Include="Microsoft.VisualBasic.FileIO" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Deployment.Application" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Management.Instrumentation" />
+    <Import Include="System.Media" />
+    <Import Include="System.Reflection" />
+    <Import Include="System.Resources" />
+    <Import Include="System.Runtime.InteropServices" />
+    <Import Include="System.Runtime.InteropServices.ComTypes" />
+    <Import Include="System.Runtime.InteropServices.WindowsRuntime" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SHOWWAY.designer.vb">
+      <DependentUpon>SHOWWAY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SHOWWAY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.designer.vb">
+      <DependentUpon>MAIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SHOWWAY.resx">
+      <DependentUpon>SHOWWAY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IO_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.pdf" />
+    <None Include="Resources\tatas.gif" />
+    <None Include="Resources\Webp.net-resizeimage1.png" />
+    <None Include="Resources\ezgif.com-gif-maker.gif" />
+    <None Include="Resources\faculty1.png" />
+    <None Include="Resources\real-estate1.png" />
+    <None Include="Resources\Free_Sample_By_Wix.jpg" />
+    <None Include="Resources\2937188194_0fc72b24-8979-4676-9f9f-144f3a124e5e.png" />
+    <None Include="Resources\asw.gif" />
+    <None Include="Resources\rep2.png" />
+    <None Include="Resources\print2.png" />
+    <None Include="Resources\22.jpg" />
+    <None Include="Resources\22a.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\1a.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\2a.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\3a.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\4a.jpg" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\5a.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\6a.jpg" />
+    <None Include="Resources\7.jpg" />
+    <None Include="Resources\7a.jpg" />
+    <None Include="Resources\8.jpg" />
+    <None Include="Resources\8a.jpg" />
+    <None Include="Resources\9.jpg" />
+    <None Include="Resources\9a.jpg" />
+    <None Include="Resources\10.jpg" />
+    <None Include="Resources\10a.jpg" />
+    <None Include="Resources\11.jpg" />
+    <None Include="Resources\11a.jpg" />
+    <None Include="Resources\12.jpg" />
+    <None Include="Resources\12a.jpg" />
+    <None Include="Resources\13.jpg" />
+    <None Include="Resources\13a.jpg" />
+    <None Include="Resources\14.jpg" />
+    <None Include="Resources\14a.jpg" />
+    <None Include="Resources\15.jpg" />
+    <None Include="Resources\15a.jpg" />
+    <None Include="Resources\16.jpg" />
+    <None Include="Resources\16a.jpg" />
+    <None Include="Resources\17.jpg" />
+    <None Include="Resources\17a.jpg" />
+    <None Include="Resources\18.jpg" />
+    <None Include="Resources\18a.jpg" />
+    <None Include="Resources\19.jpg" />
+    <None Include="Resources\19a.jpg" />
+    <None Include="Resources\20.jpg" />
+    <None Include="Resources\20a.jpg" />
+    <None Include="Resources\21.jpg" />
+    <None Include="Resources\21a.jpg" />
+    <None Include="Resources\23.jpg" />
+    <None Include="Resources\23b.jpg" />
+    <None Include="Resources\24.jpg" />
+    <None Include="Resources\24b.jpg" />
+    <None Include="Resources\25.jpg" />
+    <None Include="Resources\25b.jpg" />
+    <None Include="Resources\26.jpg" />
+    <None Include="Resources\26b.jpg" />
+    <None Include="Resources\27.jpg" />
+    <None Include="Resources\27b.jpg" />
+    <None Include="Resources\28.jpg" />
+    <None Include="Resources\28b.jpg" />
+    <None Include="Resources\29.jpg" />
+    <None Include="Resources\29b.jpg" />
+    <None Include="Resources\30.jpg" />
+    <None Include="Resources\30b.jpg" />
+    <None Include="Resources\31.jpg" />
+    <None Include="Resources\31b.jpg" />
+    <None Include="Resources\32.jpg" />
+    <None Include="Resources\32b.jpg" />
+    <None Include="Resources\33.jpg" />
+    <None Include="Resources\33b.jpg" />
+    <None Include="Resources\34.jpg" />
+    <None Include="Resources\34b.jpg" />
+    <None Include="Resources\35.jpg" />
+    <None Include="Resources\35b.jpg" />
+    <None Include="Resources\36.jpg" />
+    <None Include="Resources\36b.jpg" />
+    <None Include="Resources\37.jpg" />
+    <None Include="Resources\37b.jpg" />
+    <None Include="Resources\38.jpg" />
+    <None Include="Resources\38b.jpg" />
+    <None Include="Resources\39.jpg" />
+    <None Include="Resources\39b.jpg" />
+    <None Include="Resources\40.jpg" />
+    <None Include="Resources\40b.jpg" />
+    <None Include="Resources\41.jpg" />
+    <None Include="Resources\41b.jpg" />
+    <None Include="Resources\42.jpg" />
+    <None Include="Resources\42b.jpg" />
+    <None Include="Resources\43.jpg" />
+    <None Include="Resources\43b.jpg" />
+    <None Include="Resources\44.jpg" />
+    <None Include="Resources\44b.jpg" />
+    <None Include="Resources\45.jpg" />
+    <None Include="Resources\45b.jpg" />
+    <None Include="Resources\46.jpg" />
+    <None Include="Resources\46b.jpg" />
+    <None Include="Resources\47.jpg" />
+    <None Include="Resources\47b.jpg" />
+    <None Include="Resources\48.jpg" />
+    <None Include="Resources\48b.jpg" />
+    <None Include="Resources\49.jpg" />
+    <None Include="Resources\49b.jpg" />
+    <None Include="Resources\50.jpg" />
+    <None Include="Resources\50b.jpg" />
+    <None Include="Resources\51.jpg" />
+    <None Include="Resources\51b.jpg" />
+    <None Include="Resources\52.jpg" />
+    <None Include="Resources\52b.jpg" />
+    <None Include="Resources\53.jpg" />
+    <None Include="Resources\53b.jpg" />
+    <None Include="Resources\54.jpg" />
+    <None Include="Resources\54b.jpg" />
+    <None Include="Resources\55.jpg" />
+    <None Include="Resources\55b.jpg" />
+    <None Include="Resources\56.jpg" />
+    <None Include="Resources\56c.jpg" />
+    <None Include="Resources\57.jpg" />
+    <None Include="Resources\57c.jpg" />
+    <None Include="Resources\58.jpg" />
+    <None Include="Resources\58c.jpg" />
+    <None Include="Resources\59.jpg" />
+    <None Include="Resources\59c.jpg" />
+    <None Include="Resources\60.jpg" />
+    <None Include="Resources\60c.jpg" />
+    <None Include="Resources\61.jpg" />
+    <None Include="Resources\61c.jpg" />
+    <None Include="Resources\62.jpg" />
+    <None Include="Resources\62c.jpg" />
+    <None Include="Resources\63.jpg" />
+    <None Include="Resources\63c.jpg" />
+    <None Include="Resources\64.jpg" />
+    <None Include="Resources\64c.jpg" />
+    <None Include="Resources\65.jpg" />
+    <None Include="Resources\65c.jpg" />
+    <None Include="Resources\66.jpg" />
+    <None Include="Resources\66c.jpg" />
+    <None Include="Resources\67.jpg" />
+    <None Include="Resources\67c.jpg" />
+    <None Include="Resources\68.jpg" />
+    <None Include="Resources\68c.jpg" />
+    <None Include="Resources\69.jpg" />
+    <None Include="Resources\69c.jpg" />
+    <None Include="Resources\70.jpg" />
+    <None Include="Resources\70c.jpg" />
+    <None Include="Resources\71.jpg" />
+    <None Include="Resources\71c.jpg" />
+    <None Include="Resources\72.jpg" />
+    <None Include="Resources\72c.jpg" />
+    <None Include="Resources\73.jpg" />
+    <None Include="Resources\73c.jpg" />
+    <None Include="Resources\74.jpg" />
+    <None Include="Resources\74c.jpg" />
+    <None Include="Resources\75.jpg" />
+    <None Include="Resources\75c.jpg" />
+    <None Include="Resources\76.jpg" />
+    <None Include="Resources\76c.jpg" />
+    <None Include="Resources\77.jpg" />
+    <None Include="Resources\77c.jpg" />
+    <None Include="Resources\78.jpg" />
+    <None Include="Resources\78c.jpg" />
+    <None Include="Resources\79.jpg" />
+    <None Include="Resources\79c.jpg" />
+    <None Include="Resources\80.jpg" />
+    <None Include="Resources\80c.jpg" />
+    <None Include="Resources\81.jpg" />
+    <None Include="Resources\81c.jpg" />
+    <None Include="Resources\82.jpg" />
+    <None Include="Resources\82c.jpg" />
+    <None Include="Resources\83.jpg" />
+    <None Include="Resources\83c.jpg" />
+    <None Include="Resources\84.jpg" />
+    <None Include="Resources\84c.jpg" />
+    <None Include="Resources\85.jpg" />
+    <None Include="Resources\85c.jpg" />
+    <None Include="Resources\86.jpg" />
+    <None Include="Resources\86c.jpg" />
+    <None Include="Resources\87.jpg" />
+    <None Include="Resources\87c.jpg" />
+    <None Include="Resources\88.jpg" />
+    <None Include="Resources\88c.jpg" />
+    <None Include="Resources\89.jpg" />
+    <None Include="Resources\89c.jpg" />
+    <None Include="Resources\90.jpg" />
+    <None Include="Resources\90c.jpg" />
+    <None Include="Resources\91.jpg" />
+    <None Include="Resources\91c.jpg" />
+    <None Include="Resources\92.jpg" />
+    <None Include="Resources\92c.jpg" />
+    <None Include="Resources\93.jpg" />
+    <None Include="Resources\93d.jpg" />
+    <Content Include="Resources\camera-back.png" />
+    <None Include="Resources\printlocs.png" />
+    <None Include="Resources\cm.jpg" />
+    <None Include="Resources\cm1.jpg" />
+    <None Include="Resources\cw.jpg" />
+    <None Include="Resources\cw1.jpg" />
+    <Content Include="Resources\qwe.png" />
+    <None Include="Resources\rep1.png" />
+    <None Include="Resources\rep6.png" />
+    <Content Include="Resources\start.ico" />
+    <None Include="Resources\teacher1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AXVLC">
+      <Guid>{DF2BBE39-40A8-433B-A279-073F48DA94B6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
